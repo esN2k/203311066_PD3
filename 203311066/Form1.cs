@@ -49,6 +49,7 @@ namespace _203311066
 
         private void buttonFinal_Click(object sender, EventArgs e)
         {
+            Hide();
             IsimS = textBoxIsim.Text;
             SoyisimS = textBoxSoy.Text;
             MailS = textBoxMail.Text;
@@ -77,6 +78,7 @@ namespace _203311066
                 KimlikS = Convert.ToInt32(textBoxKimlik.Text)
             };
             _ = f2.ShowDialog();
+            Close();
         }
         private void ButtonCV_Click(object sender, EventArgs e)
         {
