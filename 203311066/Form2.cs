@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace _203311066
@@ -24,11 +17,21 @@ namespace _203311066
         public Label LabelPoz { get; set; }
         public Label LabelKimlik { get; set; }
 
-        public string IsimS { get => LabelIsim.Text; set => LabelIsim.Text = value; }
-        public string SoyisimS { get => LabelSoyisim.Text; set => LabelSoyisim.Text = value; }
-        public string MailS { get => LabelMail.Text; set => LabelMail.Text = value; }
-        public int TelS { get => Convert.ToInt32(LabelTel.Text); set => LabelTel.Text = value.ToString(); }
-        public string PozS { get => LabelPoz.Text; set => LabelPoz.Text = value; }
-        public int KimlikS { get => Convert.ToInt32(LabelKimlik.Text); set => LabelKimlik.Text = value.ToString(); }
+        public string IsimS { get; set; }
+        public string SoyisimS { get; set; }
+        public string MailS { get; set; }
+        public int TelS { get; set; }
+        public string PozS { get; set; }
+        public int KimlikS { get; set; }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            LabelIsim.Text = IsimS;
+            LabelSoyisim.Text = SoyisimS;
+            LabelMail.Text = MailS;
+            LabelTel.Text = TelS.ToString();
+            LabelPoz.Text = PozS;
+            LabelKimlik.Text = KimlikS.ToString();
+        }
     }
 }

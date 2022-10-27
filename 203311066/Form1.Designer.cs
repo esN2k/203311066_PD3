@@ -123,7 +123,6 @@
             this.textBoxMail.Name = "textBoxMail";
             this.textBoxMail.Size = new System.Drawing.Size(310, 32);
             this.textBoxMail.TabIndex = 23;
-
             // 
             // textBoxSoy
             // 
@@ -213,7 +212,7 @@
             this.textBoxPoz.Size = new System.Drawing.Size(310, 32);
             this.textBoxPoz.TabIndex = 25;
             // 
-            // FormCV
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -237,7 +236,7 @@
             this.Controls.Add(this.labelSubBas);
             this.Controls.Add(this.labelBaslik);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FormCV";
+            this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

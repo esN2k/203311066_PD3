@@ -56,10 +56,7 @@ namespace _203311066
             PozS = textBoxPoz.Text;
             KimlikS = Convert.ToInt32(textBoxKimlik.Text);
             _ = MessageBox.Show("Kayıt Başarılı");
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
             _ = new Form1
             {
                 IsimS = textBoxIsim.Text,
@@ -69,8 +66,8 @@ namespace _203311066
                 PozS = textBoxPoz.Text,
                 KimlikS = Convert.ToInt32(textBoxKimlik.Text)
             };
-            Hide();
-            _ = new Form2
+
+            Form2 f2 = new Form2()
             {
                 IsimS = textBoxIsim.Text,
                 SoyisimS = textBoxSoy.Text,
@@ -79,7 +76,7 @@ namespace _203311066
                 PozS = textBoxPoz.Text,
                 KimlikS = Convert.ToInt32(textBoxKimlik.Text)
             };
-            Show();
+            _ = f2.ShowDialog();
         }
         private void ButtonCV_Click(object sender, EventArgs e)
         {
