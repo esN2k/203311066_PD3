@@ -183,7 +183,6 @@
             this.label7.Size = new System.Drawing.Size(301, 28);
             this.label7.TabIndex = 48;
             this.label7.Text = "Buraya CV\'nizi Yükleyin*";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // Form2
             // 
