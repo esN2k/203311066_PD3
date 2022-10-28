@@ -30,10 +30,19 @@ namespace _203311066
             label1.Text = text;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
+            Form2 form2 = new Form2();
+            _ = form2.ShowDialog();
+            _ = form2.LabelIsim.Text = IsimS;
+            LabelSoyisim.Text = SoyisimS;
+            LabelMail.Text = MailS;
+            LabelTel.Text = TelS.ToString();
+            LabelPoz.Text = PozS;
+            LabelKimlik.Text = KimlikS.ToString();
+            string text = "İsim: " + IsimS + "\n" + "Soyisim: " + SoyisimS + "\n" + "Mail: " + MailS + "\n" + "Telefon: " + TelS + "\n" + "Pozisyon: " + PozS + "\n" + "Kimlik: " + KimlikS;
+            _ = MessageBox.Show(text);
             Close();
-
         }
     }
 }
